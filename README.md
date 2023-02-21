@@ -4,6 +4,8 @@ Horse is a set of pybullet/pyrosim-based functions that produces a 3-dimensional
 
 In brief, the horse algorithm works by pre-defining a thoracic length of 2 to 6 links. The links' dimensions can range in size from 0.1 to 3.0 units. The algorithm then adds "limbs" into x, y, and z directions. These segments are random in size, but are **bilaterally symmetric** (to mimic most animals), such that if a "limb" exists on one side of the horse, its mirror image exists on the other. Sensors, motors, and synaptic weights are assigned at random based on a coin toss (boolean variable randomly set to 0 or 1).
 
+![Body-Brain Diagram](https://imgur.com/Hx3oQeB)
+
 
 ## Usage
 
