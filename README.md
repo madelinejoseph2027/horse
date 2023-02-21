@@ -4,7 +4,10 @@ Horse is a set of pybullet/pyrosim-based functions that produces a 3-dimensional
 
 In brief, the horse algorithm works by pre-defining a thoracic length of 2 to 6 links. The links' dimensions can range in size from 0.1 to 3.0 units. The algorithm then adds "limbs" into x, y, and z directions. These segments are random in size, but are **bilaterally symmetric** (to mimic most animals), such that if a "limb" exists on one side of the horse, its mirror image exists on the other. Sensors, motors, and synaptic weights are assigned at random based on a coin toss (boolean variable randomly set to 0 or 1).
 
-![Body-Brain Diagram](https://imgur.com/Hx3oQeB)
+The following diagram shows an example "horse." Green links are sensorized, while blue are unsensorized. Green joints are motorized, while blue are unmotorized (this wouldn't actually be reflected in the output of horseSim.py – joints are not colored). Synapses are active if they connect to a sensorized link with a motorized joint. A synapse that connect a unsensorized and/or unmotorized joints are inactive.
+
+![Body-Brain Diagram](https://user-images.githubusercontent.com/122245493/220243994-f18b9ff8-2993-41eb-a7e1-76335d226b88.jpg)
+
 
 
 ## Usage
